@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash of BaNG | Join Clan</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Clash of BaNG</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="troops.html">Troops</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="register.html" class="active">Join Clan</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container" style="padding-top: 5rem;">
+        
+        <div class="register-section">
+            <h2 style="text-align: center; display: block; margin-bottom: 2rem;">Clan Registration Form</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">
+                Answer the call! Become a member of the Clash of BaNG community.
+            </p>
+
+            <form id="registerForm" novalidate>
+                <!-- 1. Text Input -->
+                <div class="form-group">
+                    <label for="name">Chief Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your in-game name">
+                    <div class="error-message"></div>
+                </div>
+
+                <!-- 2. Email Input -->
+                <div class="form-group">
+                    <label for="email">Raven Address (Email)</label>
+                    <input type="email" id="email" class="form-control" placeholder="chief@clash.com">
+                    <div class="error-message"></div>
+                </div>
+
+                <!-- 3. Number Input -->
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" class="form-control" placeholder="Must be between 13 and 99">
+                    <div class="error-message"></div>
+                </div>
+
+                <!-- 4. Radio Buttons -->
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" id="genderMale" value="male">
+                            Male
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" id="genderFemale" value="female">
+                            Female
+                        </label>
+                    </div>
+                    <div class="error-message"></div>
+                </div>
+
+                <!-- 5. Select Dropdown -->
+                <div class="form-group">
+                    <label for="troop">Favorite Troop</label>
+                    <select id="troop" class="form-select">
+                        <option value="none" selected disabled>Select your favorite warrior...</option>
+                        <option value="barbarian">Frenzied Barbarian</option>
+                        <option value="archer">Sneaky Archer</option>
+                        <option value="goblin">Greedy Goblin</option>
+                        <option value="knight">Shadow Knight</option>
+                        <option value="wizard">Pyromancer Wizard</option>
+                    </select>
+                    <div class="error-message"></div>
+                </div>
+
+                <!-- 6. Textarea -->
+                <div class="form-group">
+                    <label for="reason">Reason to Join</label>
+                    <textarea id="reason" class="form-textarea" placeholder="Why do you want to join our forces? (Minimum 15 characters)"></textarea>
+                    <div class="error-message"></div>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Submit Registration</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="logo" style="justify-content: center; margin-bottom: 1rem;">Clash of BaNG</div>
+        <p style="color: var(--text-muted);">© 2024 Clash of BaNG Fan Community. Not affiliated with official creators.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
